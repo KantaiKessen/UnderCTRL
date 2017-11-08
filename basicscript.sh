@@ -8,7 +8,7 @@ for user in $(cat users); do grep -q $user /etc/passwd || useradd -m -s /bin/bas
 #This adds users to the system, they need to be in a users file
 for nuser in $(awk -F: '($3>=1001)&&($1!="nobody"){print $1}' /etc/passwd); do grep -q $nuser users || deluser $nuser; done
 #Deletes rouge users
-
+echo "Sorry, I'm not smart enought to remove Autologin users. Maybe soon"
 #Need to put a thing to remove autologin users.
 for cpuser in $(awk -F: '($3>=1001)&&($1!="nobody"){print $1}' /etc/passwd); do echo $cpuser':Cyb3rP@triot!' | chpasswd; done
 # adds password for all users.

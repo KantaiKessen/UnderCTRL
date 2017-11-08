@@ -8,4 +8,5 @@ apt-get install -y clamav > /dev/null
 apt-get install -y chkrootkit > /dev/null
 apt-get install -y nmap > /dev/null
 ufw enable
+3 | update-alternatives --config editor
 echo "Do the Forensics Questions first, then run basicscript.sh"
