@@ -1,25 +1,92 @@
 # Everything is Under CTRL
-If you are reading me after you've used these scripts, then you need help.
-### Table of Contents
-1. [How Do I Use This?](#how-do-i-use-this)
-2. [Script Order](#script-order)
-3. [What Do They Do](#what-do-they-do)
 
-#### How Do I Use This?
-   It's pretty easy. Put it on your desktop, make a users and programs files, and then run the scripts. You will need to put the users from your read me in the users file, and put the neccessary packages (make sure it is readeble by apt-get) in the programs file.
-  
-#### Script Order
-1. starter
-2. Forensics Questions
-3. basicscript
-4. replace (Use the correct version)
+No really. It's under control.
+## Getting Started
+Download the repo to your computer through git or github.
 
+### Prerequisites
+If you are downloading through git, you will need git. You also need to have Ubuntu.
 
-#### What Do They Do
-##### Starterscript
-starterscript installs necessary tools, such as vim, ClamAV, chkrtkit, and enables the firewall. It also changes the default editor to VIM. If you don't like VIM, SOL.
-##### basicscript
-Although It is named "basic script", it is far from basic. This script will add users to the system from the users file, and remove all users not in the users file. It will also add necessary programs and remove unecessary ones. It is recommended that you do anything you need to do before you use it.
-##### replace
-This script copies clean versions of the security policy files and replaces them in `/etc/pam.d` It is strongly recommended you use the version suggested for your OS. This script also disables guest access.
+```
+git clone https://github.com/Niokiryth/UnderCTRL.git
+```
 
+### Installing
+
+A step by step series of examples that tell you have to get a development env running
+
+Run the first script
+
+```
+sudo ./starterscript.sh
+```
+
+Make a text file with the users that are supposed to be in your system and one with the programs
+
+```
+vim ./users
+vim ./programs
+```
+Run the second script
+```
+sudo ./basicscript.sh
+```
+Make sure you check your sudoers file
+```
+sudo visudo
+```
+Run the third script
+```
+sudo ./ubuntu(version)/replace.sh
+```
+Be wary, because this could break your system.
+
+End with an example of getting some data out of the system or using it for a little demo
+
+## Running the tests
+
+Explain how to run the automated tests for this system
+
+### Break down into end to end tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+### And coding style tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+## Deployment
+
+Add additional notes about how to deploy this on a live system
+
+## Built With
+
+* [Cloud9](https://c9.io) - IDE
+
+## Contributing
+
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Authors
+
+* **Kevin Liu** - *Initial work* - [Niokiryth](https://github.com/Niokiryth)
+
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the GNU License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Me
+* Myself
+* I
