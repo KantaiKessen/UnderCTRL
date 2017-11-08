@@ -15,31 +15,22 @@ git clone https://github.com/Niokiryth/UnderCTRL.git
 
 A step by step series of examples that tell you have to get a development env running
 
-Run the first script
+#### Easy Way
 
-```
-sudo ./starterscript.sh
-```
+1. Go to [https://github.com/Niokiryth/UnderCTRL] (https://github.com/Niokiryth/UnderCTRL)
+2. Download the zip/tar file.
+3. Extract it to somewhere like the desktop
+4. Write a users and a programs file. EX `vim users` and `vim programs` and put the requisite information in the files.
+5. Run the scripts as root in this order: starter, basicscript, and then replace. Make sure that you use the correct version for your OS.
 
-Make a text file with the users that are supposed to be in your system and one with the programs
+#### Hard Way
 
-```
-vim ./users
-vim ./programs
-```
-Run the second script
-```
-sudo ./basicscript.sh
-```
-Make sure you check your sudoers file
-```
-sudo visudo
-```
-Run the third script
-```
-sudo ./ubuntu(version)/replace.sh
-```
-Be wary, because this could break your system.
+1. Make sure git is installed on your computer
+2. Type in `git clone https://github.com/Niokiryth/UnderCTRL.git`
+3. Put the folder on the Desktop
+4. Write a users and a programs file. EX `vim users` and `vim programs` and put the requisite information in the files.
+5. Run the scripts as root in this order: starter, basicscript, and then replace. Make sure that you use the correct version for your OS.
+
 
 End with an example of getting some data out of the system or using it for a little demo
 
@@ -70,10 +61,6 @@ Add additional notes about how to deploy this on a live system
 ## Built With
 
 * [Cloud9](https://c9.io) - IDE
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Authors
 
