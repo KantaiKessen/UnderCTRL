@@ -17,7 +17,7 @@ Installing is a simple 3 step process
 
 #### Easy Way
 
-1. Go to [https://github.com/Niokiryth/UnderCTRL] (https://github.com/Niokiryth/UnderCTRL)
+1. Go to https://github.com/Niokiryth/UnderCTRL 
 2. Download the zip/tar file.
 3. Extract it to somewhere like the desktop
 
