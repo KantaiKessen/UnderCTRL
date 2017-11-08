@@ -13,45 +13,44 @@ git clone https://github.com/Niokiryth/UnderCTRL.git
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
+Installing is a simple 3 step process
 
 #### Easy Way
 
 1. Go to [https://github.com/Niokiryth/UnderCTRL] (https://github.com/Niokiryth/UnderCTRL)
 2. Download the zip/tar file.
 3. Extract it to somewhere like the desktop
-4. Write a users and a programs file. EX `vim users` and `vim programs` and put the requisite information in the files.
-5. Run the scripts as root in this order: starter, basicscript, and then replace. Make sure that you use the correct version for your OS.
+
 
 #### Hard Way
 
 1. Make sure git is installed on your computer
 2. Type in `git clone https://github.com/Niokiryth/UnderCTRL.git`
 3. Put the folder on the Desktop
-4. Write a users and a programs file. EX `vim users` and `vim programs` and put the requisite information in the files.
-5. Run the scripts as root in this order: starter, basicscript, and then replace. Make sure that you use the correct version for your OS.
 
 
 End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+You will need to have put the directory on the desktop and made the users and programs files.
 
-### Break down into end to end tests
+### Run the starter script
 
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
+This will install useful programs, like vim, clamav, and libpam-cracklib. It will also change your default editor to vim and enable the firewall
 
 ```
-Give an example
+./starter.sh
+
+```
+
+### Run the basicscript
+
+This adds users to the system from the users file, and deletes those that are not. It also changes passwords for all users except for yourself.
+It also deletes autologin users and bad programs.
+
+```
+./basicscript.sh
 ```
 
 ## Deployment
