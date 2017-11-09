@@ -35,16 +35,22 @@ Installing is a simple 3 step process
 
 End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
+## Running the scripts
 
 You will need to have put the directory on the desktop and made the users and programs files.
 
+### Make sure the starter is executable
+starter will make the other scripts executable
+```
+chmod 755 starter.sh
+```
+
 ### Run the starter script
 
-This will install useful programs, like vim, clamav, and libpam-cracklib. It will also change your default editor to vim and enable the firewall
+This will install useful programs, like vim, clamav, and libpam-cracklib. It will also change your default editor to vim and enable the firewall. It will also make all the scripts executable.
 
 ```
-./starter.sh
+sudo ./starter.sh
 
 ```
 
@@ -54,7 +60,20 @@ This adds users to the system from the users file, and deletes those that are no
 It also deletes autologin users and bad programs.
 
 ```
-./basicscript.sh
+sudo ./basicscript.sh
+```
+
+### Run the replace script
+This will replace your security policy files with those that are clean
+
+```
+sudo ./YOUR_UBUNTU_VERSION/replace.sh
+```
+
+### Run the findmedia script
+This will find media files and print them into a file.
+```
+sudo ./findmedia.sh
 ```
 
 ## Deployment
