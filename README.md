@@ -4,7 +4,7 @@ No really. It's under control.
 
 ## Releases
 Prerelease
-1. [Avocado0.1.0](https://github.com/Niokiryth/UnderCTRL/releases/tag/v0.1.0.16-prealpha)
+1. [Avocado 0.1.0](https://github.com/Niokiryth/UnderCTRL/releases/tag/v0.1.0.16-prealpha)
 2. [Avocado 0.2.0](https://github.com/Niokiryth/UnderCTRL/releases/tag/v0.2.0-prealpha)
 ## Getting Started
 Download the repo to your computer through git or github.
@@ -60,7 +60,7 @@ This adds users to the system from the users file, and deletes those that are no
 It also deletes autologin users and bad programs.
 
 ```
-sudo ./basicscript.sh
+sudo ./basicscript/basicscript.sh
 ```
 
 ### Run the replace script
@@ -73,22 +73,23 @@ sudo ./YOUR_UBUNTU_VERSION/replace.sh
 ### Run the findmedia script
 This will find media files and print them into a file.
 ```
-sudo ./findmedia.sh
+sudo ./mediafinder/findmedia.sh
 ```
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+This probably won't work on a real computer.
 
-## Built With
+## Written
 
 * [Cloud9](https://c9.io) - IDE
+* [Bash](https://www.gnu.org/software/bash/) - Language
 
 ## Authors
 
 * **Kevin Liu** - *Initial work* - [Niokiryth](https://github.com/Niokiryth)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/Niokiryth/UnderCTRL/graphs/contributors) who participated in this project.
 
 ## License
 
