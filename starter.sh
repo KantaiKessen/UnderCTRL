@@ -6,11 +6,12 @@ chmod 755 ./findmedia.sh
 chmod 755 ./basicscript.sh
 chmod 755 ./Ubuntu1*/replace.sh
 chmod 755 ./findmedia.sh
-apt-get install -y libpam-cracklib > /dev/null
-apt-get install -y vim > /dev/null
-apt-get install -y clamav > /dev/null
-apt-get install -y chkrootkit > /dev/null
-apt-get install -y nmap > /dev/null
+apt-get install -y libpam-cracklib
+apt-get install -y vim
+apt-get install -y clamav
+apt-get install -y chkrootkit
+apt-get install -y nmap
+apt-get install -y selinux
 ufw enable
 update-alternatives --config editor
 nmap -sT localhost
