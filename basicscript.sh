@@ -14,6 +14,6 @@ for cpuser in $(awk -F: '($3>=1001)&&($1!="nobody"){print $1}' /etc/passwd); do 
 # adds password for all users.
 for program in $(cat programs); do dpkg --get-selections | grep -q  $program || apt-get install $program; done
 #installs programs in programs list
-for bprogram in $(cat badprograms); do grep -q -e $bprogram -f ./programs || apt-get --autoremove purge $bprogram; done
+for bprogram in $(cat badprograms); do grep -q -e $bprogram -f ./programs || apt-get remove $bprogram; done
 echo "Now make sure the Sudoers are OK. Also check that sudoers.d doesn't have bad stuff\nrun replace.sh now too."
 #removes programs from a set of bad programs that are not in the list of good programs
