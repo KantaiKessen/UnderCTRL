@@ -51,7 +51,6 @@ This will install useful programs, like vim, clamav, and libpam-cracklib. It wil
 
 ```
 sudo ./starter.sh
-
 ```
 
 ### Run the basicscript
