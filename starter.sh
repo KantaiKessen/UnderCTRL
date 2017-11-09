@@ -2,10 +2,10 @@ if [ "$(whoami)" != "root" ]; then
 	echo "Sorry, you are not root."
 	exit 1
 fi
-chmod 755 ./findmedia.sh
-chmod 755 ./basicscript.sh
-chmod 755 ./Ubuntu1*/replace.sh
-chmod 755 ./findmedia.sh
+chmod 755 ./mediafinder/findmedia.sh
+chmod 755 ./basicscript/basicscript.sh
+chmod 755 './Ubuntu14.04/replace.sh'
+chmod 755 './Ubuntu16.04.5LTS/replace.sh'
 apt-get install -y libpam-cracklib
 apt-get install -y vim
 apt-get install -y clamav
