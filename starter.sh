@@ -15,4 +15,5 @@ apt-get install -y selinux
 ufw enable
 update-alternatives --config editor
 nmap -sT localhost
+touch ./mediafinder/programs
 echo "Do the Forensics Questions first, then run basicscript.sh"
