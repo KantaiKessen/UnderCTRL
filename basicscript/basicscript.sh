@@ -1,7 +1,7 @@
 #!/bin/bash
 if [ "$(whoami)" != "root" ]; then
-	echo "Sorry, you are not root."
-	exit 1
+    echo "Sorry, you are not root."
+    exit 1
 fi
 #enables firewall
 for user in $(cat users); do grep -q $user /etc/passwd || useradd -m -s /bin/bash $user; done
