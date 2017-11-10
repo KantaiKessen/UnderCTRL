@@ -10,7 +10,7 @@ for nuser in $(awk -F: '($3>=1001)&&($1!="nobody"){print $1}' /etc/passwd); do g
 #Deletes rouge users
 sed -i "/nopasswdlogin:x:119:/c\nopasswdlogin:x:119:$(logname)" /etc/group
 #This remove autologin users.
-for cpuser in $(awk -F: '($3>=1001)&&($1!="nobody"){print $1}' /etc/passwd); do echo $cpuser':BC=,h+2Ev8sfyLq*!' | chpasswd; done
+for cpuser in $(awk -F: '($3>=1001)&&($1!="nobody"){print $1}' /etc/passwd); do echo $cpuser'Cyb3rP@triot!' | chpasswd; done
 # adds password for all users.
 for program in $(cat programs); do dpkg --get-selections | grep -q  $program || apt-get install $program; done
 #installs programs in programs list
