@@ -6,6 +6,7 @@ No really. It's under control.
 Prerelease
 1. [Alicorn 0.1.0](https://github.com/Niokiryth/UnderCTRL/releases/tag/v0.1.0.16-prealpha)
 2. [Alicorn 0.2.0](https://github.com/Niokiryth/UnderCTRL/releases/tag/v0.2.0-prealpha)
+3. [Basilisk 0.5.0](https://github.com/Niokiryth/UnderCTRL/releases/tag/v0.5.0-alpha)
 ## Getting Started
 Download the repo to your computer through git or github.
 
